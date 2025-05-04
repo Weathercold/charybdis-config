@@ -244,40 +244,24 @@ jobs:
         continue-on-error: true
         uses: actions/upload-artifact/merge@v4
         with:
-          pattern: artifact-charybdis_qwerty_{left,right}
-          name: firmware-charybdis-qwerty
-          delete-merged: true
-
-      - name: Upload Charybdis ZMK Firmware (QWERTY Dongle)
-        continue-on-error: true
-        uses: actions/upload-artifact/merge@v4
-        with:
-          pattern: artifact-charybdis_qwerty_dongle*
-          name: firmware-charybdis-qwerty-dongle
+          pattern: artifact-qwerty_{left,right}
+          name: firmware-qwerty
           delete-merged: true
 
       - name: Upload Charybdis ZMK Firmware (Colemak BT)
         continue-on-error: true
         uses: actions/upload-artifact/merge@v4
         with:
-          pattern: artifact-charybdis_colemak_{left,right}
-          name: firmware-charybdis-colemak
+          pattern: artifact-colemak_{left,right}
+          name: firmware-colemak
           delete-merged: true
 
-      - name: Upload Charybdis ZMK Firmware (Colemak Dongle)
+      - name: Upload Firmware Reset
         continue-on-error: true
         uses: actions/upload-artifact/merge@v4
         with:
-          pattern: artifact-charybdis_colemak_dongle*
-          name: firmware-charybdis-colemak-dongle
-          delete-merged: true
-
-      - name: Upload Firmware Reset (Nano v2)
-        continue-on-error: true
-        uses: actions/upload-artifact/merge@v4
-        with:
-          pattern: artifact-firmware_reset_nano_v2
-          name: firmware-reset-nanov2
+          pattern: artifact-firmware_reset
+          name: firmware-reset
           delete-merged: true
 
       - name: Delete keymap artifacts

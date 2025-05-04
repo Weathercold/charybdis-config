@@ -1,2 +1,5 @@
-boards/shields/charybdis/charybdis.keymap
+.direnv/
+.venv/
 drivers/
+
+boards/shields/charybdis/charybdis.keymap
