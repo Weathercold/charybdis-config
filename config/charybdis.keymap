@@ -70,10 +70,11 @@
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┴──────┴──────┴──────╯
 //                         36     37     38        39     40
 //                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
-// #define BASE    0
-#define NUM     1
-#define NAV     2
-#define SYM     3
+#define CANARY  0
+#define QWERTY  1
+#define NUM     2
+#define NAV     3
+#define SYM     4
 // #define GAME    4
 // #define PHOTOS  5
 // #define EXTRAS  6
@@ -83,14 +84,27 @@
 
     keymap {
         compatible = "zmk,keymap";
-        BASE {
+        CANARY {
             bindings = <
 /*
-&1                             &2              &3               &4              &5               &6        &7            &8                &9               &10               &11                              &12
+&1                             &2              &3               &4              &5               &6        &7            &8                &9               &10               &11              &12
 */
-&kp ESC                        &kp Q           &kp W            &kp E           &kp R            &kp T     &kp Y         &kp U             &kp I            &kp O             &kp P                            &kp BSPC
-&hm_left LG(LC(LA(LSHFT))) TAB &hm_left LGUI A &hm_left LCTRL S &hm_left LALT D &hm_left LSHFT F &kp G     &kp H         &hm_right RSHFT J &hm_right RALT K &hm_right RCTRL L &hm_right RG(RC(RA(RSHFT))) SEMI &kp DEL
-&kp C_AC_SEARCH                &kp Z           &kp X            &kp C           &kp V            &kp B     &kp N         &kp M             &kp COMMA        &kp PERIOD        &td_home                         &kp RET
+&kp ESC                        &kp W           &kp L            &kp Y           &kp P            &kp K     &kp Z         &kp X             &kp O            &kp U             &kp SEMI         &kp BSPC
+&hm_left LG(LC(LA(LSHFT))) TAB &hm_left LGUI C &hm_left LCTRL R &hm_left LALT S &hm_left LSHFT T &kp B     &kp F         &hm_right RSHFT N &hm_right RALT E &hm_right RCTRL I &hm_right RGUI A &hm_right RG(RC(RA(RSHFT))) SQT
+&kp C_AC_SEARCH                &kp Q           &kp J            &kp V           &kp D            &kp G     &kp M         &kp H             &kp FSLH         &kp COMMA         &kp PERIOD       &kp RET
+/*
+&                              &               & */             &mkp LCLK       &kp SPACE        &kp SPACE &lt SYM SPACE &lt NUM SPACE
+            >;
+        };
+
+        QWERTY {
+            bindings = <
+/*
+&1                             &2              &3               &4              &5               &6        &7            &8                &9               &10               &11                 &12
+*/
+&kp ESC                        &kp Q           &kp W            &kp E           &kp R            &kp T     &kp Y         &kp U             &kp I            &kp O             &kp P               &kp BSPC
+&hm_left LG(LC(LA(LSHFT))) TAB &hm_left LGUI A &hm_left LCTRL S &hm_left LALT D &hm_left LSHFT F &kp G     &kp H         &hm_right RSHFT J &hm_right RALT K &hm_right RCTRL L &hm_right RGUI SEMI &hm_right RG(RC(RA(RSHFT))) SQT
+&kp C_AC_SEARCH                &kp Z           &kp X            &kp C           &kp V            &kp B     &kp N         &kp M             &kp COMMA        &kp PERIOD        &kp FSLH            &kp RET
 /*
 &                              &               & */             &mkp LCLK       &kp SPACE        &kp SPACE &lt SYM SPACE &lt NUM SPACE
             >;

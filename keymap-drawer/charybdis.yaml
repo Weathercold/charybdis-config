@@ -1,6 +1,48 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  BASE:
+  '0':
+  - ESC
+  - W
+  - L
+  - Y
+  - P
+  - K
+  - Z
+  - X
+  - O
+  - U
+  - ;
+  - BACKSPACE
+  - {t: TAB, h: HYPER}
+  - {t: C, h: LGUI}
+  - {t: R, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: T, h: LSHFT}
+  - B
+  - F
+  - {t: N, h: RSHFT}
+  - {t: E, h: RALT}
+  - {t: I, h: RCTRL}
+  - {t: A, h: RGUI}
+  - {t: '''', h: HYPER}
+  - SEARCH
+  - Q
+  - J
+  - V
+  - D
+  - G
+  - M
+  - H
+  - /
+  - ','
+  - .
+  - RET
+  - L CLK
+  - SPACE
+  - SPACE
+  - {t: SPACE, h: '4'}
+  - {t: SPACE, h: '2'}
+  '1':
   - ESC
   - Q
   - W
@@ -23,8 +65,8 @@ layers:
   - {t: J, h: RSHFT}
   - {t: K, h: RALT}
   - {t: L, h: RCTRL}
-  - {t: ;, h: HYPER}
-  - DEL
+  - {t: ;, h: RGUI}
+  - {t: '''', h: HYPER}
   - SEARCH
   - Z
   - X
@@ -35,14 +77,14 @@ layers:
   - M
   - ','
   - .
-  - ~/
+  - /
   - RET
   - L CLK
   - SPACE
   - SPACE
-  - {t: SPACE, h: '3'}
-  - {t: SPACE, h: '1'}
-  '1':
+  - {t: SPACE, h: '4'}
+  - {t: SPACE, h: '2'}
+  '2':
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -84,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - .
   - {t: '0', type: held}
-  '2':
+  '3':
   - ''
   - ''
   - ''
@@ -126,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '3':
+  '4':
   - ''
   - ''
   - ''
@@ -423,7 +465,7 @@ layers:
 combos:
 - p: [17, 18]
   k: CAPS WORD
-  l: [BASE]
+  l: ['0']
 - p: [28, 37]
   k: Mid CLK
 - p: [16, 37]
