@@ -6,32 +6,32 @@ layers:
   - L
   - Y
   - P
-  - K
+  - B
   - Z
-  - X
+  - F
   - O
   - U
-  - ;
+  - ''''
   - BACKSPACE
   - {t: TAB, h: HYPER}
   - {t: C, h: LGUI}
   - {t: R, h: LCTRL}
   - {t: S, h: LALT}
   - {t: T, h: LSHFT}
-  - B
-  - F
+  - G
+  - M
   - {t: N, h: RSHFT}
   - {t: E, h: RALT}
   - {t: I, h: RCTRL}
   - {t: A, h: RGUI}
-  - {t: '''', h: HYPER}
+  - {t: ;, h: HYPER}
   - SEARCH
   - Q
   - J
   - V
   - D
-  - G
-  - M
+  - K
+  - X
   - H
   - /
   - ','
