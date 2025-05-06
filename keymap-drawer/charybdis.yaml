@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
-  - DEV TOOLS
+  - ESC
   - Q
   - W
   - E
@@ -12,37 +12,37 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_PHOTO L_GAME
-  - {t: TAB, h: LCMD}
-  - {t: A, h: SYM}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - BACKSPACE
+  - {t: TAB, h: HYPER}
+  - {t: A, h: LGUI}
+  - {t: S, h: LCTRL}
+  - {t: D, h: LALT}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RCMD}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RALT}
+  - {t: L, h: RCTRL}
+  - {t: ;, h: HYPER}
   - DEL
   - SEARCH
   - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
+  - X
+  - C
   - V
   - B
   - N
   - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
+  - ','
+  - .
   - ~/
-  - CLIP HIST
-  - SCRL SLOW
+  - RET
   - L CLK
-  - '&td_bs'
-  - {t: RETURN, h: MOUSE}
-  - '&td_space'
-  NUM:
+  - SPACE
+  - SPACE
+  - {t: SPACE, h: '3'}
+  - {t: SPACE, h: '1'}
+  '1':
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -71,20 +71,20 @@ layers:
   - ''
   - ''
   - ''
-  - BACK SPACE
+  - BACKSPACE
   - SPACE
   - '='
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
-  - {t: /, h: DEV TOOLS}
+  - {t: /, h: F12}
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
   - .
-  - '0'
-  NAV:
+  - {t: '0', type: held}
+  '2':
   - ''
   - ''
   - ''
@@ -104,10 +104,10 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - HSPLIT
-  - LEFT
+  - ◀
   - DOWN
   - UP
-  - RIGHT
+  - ▶
   - ''
   - ''
   - ''
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYM:
+  '3':
   - ''
   - ''
   - ''
@@ -140,7 +140,7 @@ layers:
   - '&td_grave'
   - '!'
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   GAME:
   - '1'
@@ -287,7 +287,7 @@ layers:
   - MUTE
   - VOLUME DOWN
   - VOLUME UP
-  - PRINT SCREEN
+  - PRTSCN
   - ZMK Studio
   - ''
   - ''
@@ -334,7 +334,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RETURN, type: held}
+  - RETURN
   - {t: ▽, type: trans}
   SLOW:
   - {t: ▽, type: trans}
@@ -430,15 +430,15 @@ combos:
   k: R CLK
 - p: [20, 21]
   k: )
-  l: [SYM]
+  l: ['3']
 - p: [21, 22]
   k: ']'
-  l: [SYM]
+  l: ['3']
 - p: [8, 9]
   k: '}'
-  l: [SYM]
+  l: ['3']
 - p: [32, 33]
   k: '>'
-  l: [SYM]
+  l: ['3']
 - p: [38, 39]
   k: L_BASE L_EXTRA

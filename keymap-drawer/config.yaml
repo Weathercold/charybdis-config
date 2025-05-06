@@ -58,19 +58,19 @@ parse_config:
     type: trans
   mark_alternate_layer_activators: false
   modifier_fn_map:
-    left_ctrl: Ctl
-    right_ctrl: Ctl
-    left_shift: Sft
-    right_shift: Sft
-    left_alt: Alt
-    right_alt: AGr
-    left_gui: Gui
-    right_gui: Gui
-    keycode_combiner: "{mods}+ {key}"
-    mod_combiner: "{mod_1}+{mod_2}"
+    left_ctrl: C
+    right_ctrl: C
+    left_shift: S
+    right_shift: S
+    left_alt: A
+    right_alt: A
+    left_gui: G
+    right_gui: G
+    keycode_combiner: "{mods}+{key}"
+    mod_combiner: "{mod_1}{mod_2}"
     special_combinations:
-      left_ctrl+left_alt+left_gui+left_shift: Hyper
-      left_ctrl+left_alt+left_shift: Meh
+      left_gui+left_ctrl+left_alt+left_shift: H
+      right_gui+right_ctrl+right_alt+right_shift: H
   qmk_remove_keycode_prefix:
     - KC_
   qmk_keycode_map:
@@ -209,22 +209,22 @@ parse_config:
     LA(LC(T)): "SHELL"
     C_AC_SEARCH: "SEARCH"
     LG(E): "WINDOW"
-    LC(LA(LEFT_SHIFT)): "MEH"
-    LA(LC(LG(LEFT_SHIFT))): "HYPER"
+    LG(LC(LA(LSHFT))): "HYPER"
+    RG(RC(RA(RSHFT))): "HYPER"
     LC(F10): "ALL WIN"
     LS(LC(H)): "PANE ◀"
     LS(LC(J)): "PANE ▲"
     LS(LC(K)): "PANE ▼"
     LS(LC(L)): "PANE ▶"
-    LEFT_ARROW: "LEFT"
-    RIGHT_ARROW: "RIGHT"
+    LEFT_ARROW: "◀"
+    RIGHT_ARROW: "▶"
     C_AC_UNDO: "UNDO"
     C_AC_CUT: "CUT"
     C_AC_COPY: "COPY"
     C_AC_PASTE: "PASTE"
     C_AL_COFFEE: "LOCK"
-    PRINTSCREEN: "PRINT SCREEN"
-    BACKSPACE: "BACK SPACE"
+    PRINTSCREEN: "PRTSCN"
+    BSPC: "BACKSPACE"
     LC(LA(E)): "FIT"
     LS(DELETE): "SHRED"
     LA(LC(LS(Z))): "TAG Z"
@@ -236,7 +236,6 @@ parse_config:
     LA(KP_N1): "REJECT"
     LA(KP_N2): "PENDING"
     LA(KP_N3): "ACCEPT"
-    F12: "DEV TOOLS"
     BRIGHTNESS INC: "BRIGHT ▲"
     BRIGHTNESS DEC: "BRIGHT ▼"
   zmk_combos: {}
